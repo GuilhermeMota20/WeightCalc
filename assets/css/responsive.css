@@ -1,0 +1,57 @@
+@media (max-width: 920px) {
+
+    tr {
+        gap: 3rem;
+        height: 3.8rem;
+    }
+
+    .brand {
+        padding-top: 3.5rem;
+    }
+
+
+    .container {
+        padding: 0 1rem;
+    }
+
+    .logo {
+        font-size: var(--mb-size-1);
+    }
+
+    .slogo {
+        font-size: var(--mb-size-2);
+    }
+
+    .search-bar {
+        padding: 0 3.5rem;
+
+        background-position: 6%;
+        background-size: 1.5rem;
+    
+    }
+
+    .open-modal {
+        width: 2rem;
+        height: 2rem;
+    }
+
+    .icon {
+        font-size: 1.3rem;
+    }
+
+    .modal {
+        width: 95%;
+        padding: 1rem;
+    }
+    
+    .title-modal {
+        font-size: var(--mb-size-1);
+    }
+
+    .group-data {
+        flex-direction: column;
+        gap: 0;
+    }
+
+}
+

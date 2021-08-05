@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+
+    <!-- Boxicons -->
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+
+    <!-- Font icon -->
+    <link rel="stylesheet" href="assets/fonts/style.css">
+
+    <title>Weight calc | IMC </title>
+</head>
+<body>
+    
+    <header class="container">
+        <div class="brand">
+            <h1 class="logo">Weight<span>Calc</span>.</h1>
+
+            <h4 class="slogo">Calculo de IMC seguro e eficiente</h4>
+        </div>
+    </header>
+
+    <main class="container">
+        <input type="text" name="search" id="search-bar" placeholder="Filtre sua pesquisa aqui..." class="search-bar">
+
+        <section class="content">
+            <button id="open-modal" class="open-modal">
+                <i class='bx bx-plus icon'></i>
+            </button>    
+
+            <div class="content-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nome</th>
+                            <th>Peso (Kg)</th>
+                            <th>Altura (m)</th>
+                            <th>Imc</th>
+                            <th style="display: none;" >Remove</th>
+                        </tr>
+                    </thead>
+                    
+                    <tbody id="table-patient">
+                        <tr class="patient">
+                            <td class="name">Guilherme</td>
+                            <td class="weight">60</td>
+                            <td class="height">1.67</td>
+                            <td class="imc">21.51</td>
+                            <td class="remove"><i class="icon-trash"></i></td>
+                        </tr>
+
+                        <tr class="patient">
+                            <td class="name">Erica</td>
+                            <td class="weight">60</td>
+                            <td class="height">1.67</td>
+                            <td class="imc">21.51</td>
+                            <td class="remove"><i class="icon-trash"></i></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </section>
+
+        <!-- Modal | form -->
+        <section id="modal" class="container-modal invisible">
+            <div class="modal">
+
+                <h2 class="title-modal">Adicionar um novo paciente</h2>
+                
+                <form id="form" class="form-add">
+                    <!-- Name -->
+                    <input id="name" name="name" type="text" placeholder="Digite o nome do paciente..." class="data">
+
+                    <div class="group-data">
+                        <!-- Weight -->
+                        <input id="weight" name="weight" type="text" placeholder="Digite o peso em (Kg)..." class="data">
+
+                        <!-- Height -->
+                        <input id="height" name="height" type="text" placeholder="Digite a altura em (m)..." class="data">
+                    </div>
+
+                    <button id="addPatient" class="btn-add-patient">Adicionar paciente</button>
+
+                </form>
+            </div>
+
+            <div class="messages-error">
+                <ul class="list-errors">
+
+                </ul>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <strong>&copy; By <a href="https://gmotalinks.vercel.app/"> <span>Guilherme Mota</span></a> 2021. </strong>
+    </footer>
+
+
+    <!-- Scripts -->
+    <script src="assets/js/modal.js"></script>
+    <script src="assets/js/imc.js"></script>
+    <script src="assets/js/form.js"></script>
+    <script src="assets/js/deletPatient.js"></script>
+    <script src="assets/js/filteTable.js"></script>
+
+</body>
+</html>
