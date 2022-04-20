@@ -1,5 +1,5 @@
 <h1 align="center">
-    <strong>WEIGTH<strong style="color: #000">CALC</strong>.
+    <strong>WEIGHT<strong style="color: #000">CALC</strong>.
 </h1>
 
 <br>
